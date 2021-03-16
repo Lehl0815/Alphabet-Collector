@@ -3,7 +3,24 @@
 <head>
   <title>My first web page</title>
   </head>
-  
+  <style>
+   @keyframes animBG {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+
+  body {
+    background: linear-gradient(230deg, #82ccd7, #E6DB6F, #81c994);
+    background-size: 300% 300%;
+    animation: animBG 30s infinite;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+
+</style>
   <body>
     <p>Here is a link</p>
     <br><br><br>
